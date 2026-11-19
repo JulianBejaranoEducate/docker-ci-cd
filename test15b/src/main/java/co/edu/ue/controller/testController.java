@@ -20,7 +20,7 @@ public class testController {
 	
 	@GetMapping(value="/saludar")
 	public String saludar() {
-		return "Hola estudiantes de la 15B";
+		return "Hola estudiantes de la 15B :P";
 	}
 	
 	@GetMapping(value="/sumar")
@@ -38,7 +38,7 @@ public class testController {
 
 	@GetMapping(value="/hello")
 	public String hello() {
-		return "Hola estudiantes de la 15B";
+		return "Hello estudiantes de la 16A :D";
 	}
 	
 
