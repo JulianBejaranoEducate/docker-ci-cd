@@ -35,6 +35,11 @@ public class testController {
 	public List<Prueba> getTesting(){
 		return services.listPrueba();
 	}
+
+	@GetMapping(value="/hello")
+	public String hell() {
+		return "Hola estudiantes de la 15B";
+	}
 	
 
 }
