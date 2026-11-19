@@ -45,5 +45,5 @@ jobs:
         run: docker build -t jbejarano10/backend-spring:latest .
  
       - name: Publicar imagen en Docker Hub
-        run: docker push kel2md/backend-spring:latest
+        run: docker push jbejarano10/backend-spring:latest
  
