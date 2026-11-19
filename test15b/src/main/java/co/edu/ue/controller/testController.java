@@ -19,7 +19,7 @@ public class testController {
 	IPruebaService services;
 	
 	@GetMapping(value="/saludar")
-	public String hello() {
+	public String saludar() {
 		return "Hola estudiantes de la 15B";
 	}
 	
@@ -37,7 +37,7 @@ public class testController {
 	}
 
 	@GetMapping(value="/hello")
-	public String hell() {
+	public String hello() {
 		return "Hola estudiantes de la 15B";
 	}
 	
