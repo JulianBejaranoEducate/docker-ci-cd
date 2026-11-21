@@ -52,8 +52,6 @@ jobs:
     steps:
       - name: Actualizar contenedor backend
         run: |
-          $env:Path += ";C:\Users\loqin\AppData\Local\Programs\DockerDesktop\resources\bin"
-          $env:DOCKER_CONFIG = "C:\Users\loqin\.docker"
           cd C:\Users\loqin\Desktop\universidad\segundo_trimestre\despliegues_continuos\proyecto_docker_compose_limpio
           docker compose pull backend
           docker compose up -d backend
