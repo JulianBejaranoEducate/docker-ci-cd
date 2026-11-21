@@ -17,7 +17,7 @@ services:
     restart: unless-stopped
 
   backend:
-    build: ./test15b
+    image: jbejarano10/backend-spring:latest
     container_name: backend-spring
     ports:
       - "8091:8080"
