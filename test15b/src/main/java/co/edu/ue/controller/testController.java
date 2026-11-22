@@ -17,6 +17,11 @@ public class testController {
 	
 	@Autowired
 	IPruebaService services;
+
+	@GetMapping ("/test_cd")
+		public String cd() {
+		return "Hello from Continuous Deployment";
+	}
 	
 	@GetMapping(value="/saludar")
 	public String saludar() {
