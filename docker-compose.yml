@@ -33,7 +33,7 @@ services:
       - red-data
     
   frontend:
-    build: jbejarano10/frontend-html:latest # Antes: build: ./frontend_test
+    image: jbejarano10/frontend-html:latest # Antes: build: ./frontend_test
     container_name: frontend_html
     ports:
       - "8081:80"

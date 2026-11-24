@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'test15b/**'
-      - '/github/workflows/ci.yml'
+      - './github/workflows/ci.yml'
  
 jobs:
   build-backend:
