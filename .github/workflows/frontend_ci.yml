@@ -30,3 +30,14 @@ jobs:
 
       - name: Publicar imagen en Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/frontend-html:latest
+
+  deploy-frontend:
+    needs: build-frontend
+    runs-on: self-hosted
+    steps:
+      - name: Actualizar contenedor frontend
+        shell: powershell
+        run: | 
+          cd C:\Users\loqin\Desktop\universidad\segundo_trimestre\despliegues_continuos\proyecto_docker_compose_limpio
+          docker compose pull frontend
+          docker compose up -d frontend
