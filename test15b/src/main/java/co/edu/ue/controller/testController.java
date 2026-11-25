@@ -45,9 +45,4 @@ public class testController {
 	public String hello() {
 		return "Hello estudiantes de la 16A ";
 	}
-	
-	@GetMapping(value="/bye")
-	public String bye() {
-		return "Bye estudiantes de la 16A ";
-	}
 }
